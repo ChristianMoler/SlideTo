@@ -29,6 +29,7 @@ class SlideToControl: UIControl {
   private var locationInThumb: CGFloat = 0
   private var view: UIView?
   private var isAnimaionEnabled: Bool = true
+  weak var delegate: SlideToControlDelegate?
   //MARK: Initializers
   
   override init(frame: CGRect) {
@@ -114,6 +115,7 @@ class SlideToControl: UIControl {
       isAnimaionEnabled = false
       textLabel.alpha = 0
       updateThumbPositionWith(value: endXPoint)
+      delegate?.sliderCameToEnd()
       endTracking(touch, with: event)
       return false
     }
@@ -190,6 +192,12 @@ extension SlideToControl {
       return textLabel.font.pointSize
     }
   }
+}
+
+  //MARK: Delegate
+
+protocol SlideToControlDelegate: class {
+  func sliderCameToEnd()
 }
 
 

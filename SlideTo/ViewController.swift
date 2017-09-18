@@ -8,12 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, SlideToControlDelegate {
+@IBOutlet weak var slider: SlideToControl!
   override func viewDidLoad() {
-      super.viewDidLoad()
+    super.viewDidLoad()
+    slider.delegate = self
   }
   
+  func sliderCameToEnd(){
+    print("Hello")
+  }
 
 }
 
