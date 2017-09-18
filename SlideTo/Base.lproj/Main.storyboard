@@ -18,34 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0a-Yi-b5m" customClass="SlideToControl" customModule="SlideTo" customModuleProvider="target">
-                                <rect key="frame" x="8" y="298" width="359" height="70"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7o-wS-iQG" customClass="SlideToControl" customModule="SlideTo" customModuleProvider="target">
+                                <rect key="frame" x="8" y="557" width="359" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="eaa-2u-Yvk"/>
+                                    <constraint firstAttribute="height" constant="70" id="2eH-gI-HFF"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
-                                        <color key="value" red="0.35686274509999999" green="0.6705882353" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Slide to disable"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="labelFontSize">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="thumbColor">
-                                        <color key="value" red="0.0" green="0.90588235289999997" blue="0.3625759549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="labelColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T0a-Yi-b5m" secondAttribute="trailing" constant="8" id="0qV-HG-ay2"/>
-                            <constraint firstItem="T0a-Yi-b5m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FDd-WP-XtE"/>
-                            <constraint firstItem="T0a-Yi-b5m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="O9c-nI-n6H"/>
-                            <constraint firstItem="T0a-Yi-b5m" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="flN-Oi-hUO"/>
+                            <constraint firstItem="y7o-wS-iQG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="EFT-jX-5lk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y7o-wS-iQG" secondAttribute="trailing" constant="8" id="evV-Ze-nIA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y7o-wS-iQG" secondAttribute="bottom" constant="40" id="l0V-n4-pLn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
