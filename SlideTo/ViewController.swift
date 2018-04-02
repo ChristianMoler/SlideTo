@@ -14,10 +14,10 @@ class ViewController: UIViewController, SlideToControlDelegate {
     super.viewDidLoad()
     slider.delegate = self
   }
-  
-  func sliderCameToEnd(){
+
+  func sliderCameToEnd() {
     let alert: UIAlertController = UIAlertController(title: "Slider", message: "work", preferredStyle: .alert)
-    let action: UIAlertAction = UIAlertAction(title: "OK", style: .cancel) { (action) in
+    let action: UIAlertAction = UIAlertAction(title: "OK", style: .cancel) { _ in
       alert.dismiss(animated: true, completion: nil)
     }
     alert.addAction(action)
@@ -25,4 +25,3 @@ class ViewController: UIViewController, SlideToControlDelegate {
   }
 
 }
-
